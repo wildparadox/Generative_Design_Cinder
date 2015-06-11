@@ -24,7 +24,6 @@ using namespace std;
 class P_1_0_01App : public App {
   public:
 	void setup() override;
-	void mouseDown( MouseEvent event ) override;
     void mouseMove( MouseEvent event ) override;
     void keyDown( KeyEvent event ) override;
 	void update() override;
@@ -47,14 +46,9 @@ void P_1_0_01App::setup()
 {
 }
 
-void P_1_0_01App::mouseDown( MouseEvent event )
-{
-
-}
-
 void P_1_0_01App::mouseMove( MouseEvent event )
 {
-        mouseLocation = vec2(event.getX(), event.getX());
+        mouseLocation = vec2(event.getX(), event.getY());
 }
 
 void P_1_0_01App::keyDown( KeyEvent event ){
